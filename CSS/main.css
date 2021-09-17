@@ -42,8 +42,10 @@ svg circle {
   fill: transparent;
   stroke: #2ec4ff;
   stroke-width: 0.5rem;
-  stroke-dasharray: 1256;
+  stroke-dasharray: 1255;
   stroke-dashoffset: 0;
+  -webkit-transform: rotate(-90 100 100);
+          transform: rotate(-90 100 100);
 }
 
 .ui-container {

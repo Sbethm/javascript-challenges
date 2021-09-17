@@ -1,0 +1,99 @@
+@import "./variables";
+
+body {
+    background-color: rgb(37, 36, 36);
+    margin: 0;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    align-items: center;
+    width: Max(500px, 50%);
+}
+
+svg{
+    grid-column: 1;
+    grid-row: 1;
+    width: Max(500px, 50%);
+    height: 75vh;
+   
+
+    & circle {
+        fill: transparent;
+        stroke: $activeColor;
+        stroke-width: 0.5rem;
+        stroke-dasharray: 1230;
+        stroke-dashoffset: 0;
+        transform: rotate();
+    }
+}
+
+.ui-container {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    padding: 1rem;
+    margin: 0 auto;
+    //Used to style Input font
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+}
+
+
+
+.input-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & input {
+        width: 50%;
+        height: max-content;
+        background-color:  rgb(37, 36, 36);
+        text-align: center;
+        //Uses styles from parent .container
+        font-family: inherit;
+        font-size: 100%;
+    }
+    
+    & input[type='text']{
+        color: $inactiveColor;
+    }
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+i {
+    font-size: Max(2rem, 4rem);
+    color: $inactiveColor;
+    border-radius: 50%;
+    height: max-content;
+}
+
+.active {
+    color: $activeColor;
+    box-shadow: 1px 1px 15px 5px rgba(85,179,216,0.46);
+}
+// rgb(85, 179, 216)
+.inactive {
+    color: $inactiveColor;
+    box-shadow: none;
+}
