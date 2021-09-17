@@ -1,0 +1,55 @@
+@import "./variables";
+
+body {
+    background-color: rgb(37, 36, 36);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: 25% 75%;
+    width: 50%;
+    padding: 5em;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    background-color: rgb(37, 36, 36);
+    border: solid 3px rgb(84, 179, 216);
+    border-radius: 100%;
+}
+
+.btn-container {
+    // display: flex;
+    // justify-content: center;
+    //align-items: center;
+}
+
+input {
+    width: 50%;
+    grid-area: 1 / 1 / 2 / 3;
+    margin: 0 auto;
+    text-align: center;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+i {
+    padding: 2em;
+    font-size: clamp(1rem, 75vw, 2.5rem);
+}
+
+.fa-pause-circle {
+    color: $inactiveColor;
+    grid
+}
+
+.fa-play-circle {
+    color: $activeColor;
+}

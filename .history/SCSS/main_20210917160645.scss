@@ -1,0 +1,81 @@
+@import "./variables";
+
+body {
+    background-color: rgb(37, 36, 36);
+    margin: 0;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    // grid-template-columns: Max(8rem, 50%) Max(8rem, 50%);
+    // grid-row: 25% 75%;
+    width: Max(500px, 50%);
+    height: 50vh;
+    padding: 1em;
+    margin: 0 auto;
+    //Used to style Input font
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+}
+
+// svg{
+//     width: 100%;
+//     height: 50vh;
+   
+
+//     & circle {
+//         fill: transparent;
+//         stroke: $activeColor;
+//         stroke-width: 0.5rem;
+//     }
+// }
+
+input {
+    display: inline;
+    width: 50%;
+    // grid-area: 1 / 1 / 2 / 3;
+    margin: 0 auto;
+    background-color:  rgb(37, 36, 36);
+    text-align: center;
+    //Uses styles from parent .container
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input[type='text']{
+    color: $inactiveColor;
+}
+
+i {
+    // display: block;
+    // margin: 1em auto;
+    font-size: Max(2rem, 4rem);
+    color: $inactiveColor;
+    border-radius: 50%;
+}
+
+.fa-play-circle {
+    // grid-area: 2 / 1 / 3 / 2;
+}
+
+.fa-pause-circle {
+    // grid-area: 2 / 2 / 3 / 3;
+}
+
+.active {
+    color: $activeColor;
+    box-shadow: 1px 1px 15px 5px rgba(85,179,216,0.46);
+}
+// rgb(85, 179, 216)
+.inactive {
+    color: $inactiveColor;
+    box-shadow: none;
+}

@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(37, 36, 36);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 50%;
+    padding: 5em;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    background-color: rgb(37, 36, 36);
+    border: solid 3px rgb(84, 179, 216);
+    border-radius: 100%;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: ;
+}
+
+input {
+    width: fit-content;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+i {
+    font-size: 5em;
+}
+
+.fa-pause-circle {
+    color: $inactiveColor;
+}
+
+.fa-play-circle {
+    color: $activeColor;
+}

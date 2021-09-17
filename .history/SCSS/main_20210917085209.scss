@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(37, 36, 36);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 50%;
+    padding: 5em;
+    margin: 0 auto;
+    background-color: rgb(37, 36, 36);
+    border: solid 3px rgb(84, 179, 216);
+    border-radius: 100%;
+}
+
+input {
+    width: ;
+    font-family: 'Roboto Slab', serif;
+    font-size: ;
+}
+
+i {
+    width: 50%;
+}
