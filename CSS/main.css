@@ -26,6 +26,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: Max(500px, 50%);
 }
 
 svg {
@@ -33,7 +34,6 @@ svg {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  padding: 1rem;
   width: Max(500px, 50%);
   height: 75vh;
 }
@@ -42,6 +42,8 @@ svg circle {
   fill: transparent;
   stroke: #2ec4ff;
   stroke-width: 0.5rem;
+  stroke-dasharray: 1256;
+  stroke-dashoffset: 0;
 }
 
 .ui-container {
@@ -62,7 +64,6 @@ svg circle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: Max(500px, 50%);
   height: 50vh;
   padding: 1rem;
   margin: 0 auto;
