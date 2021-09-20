@@ -4,6 +4,7 @@ body {
 }
 
 main {
+  width: Max(500px, 50%);
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,6 +27,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: Max(500px, 50%);
 }
 
@@ -35,17 +39,14 @@ svg {
   -ms-grid-row: 1;
   grid-row: 1;
   width: Max(500px, 50%);
+  margin: 0 auto;
   height: 75vh;
 }
 
-svg circle {
+circle {
   fill: transparent;
   stroke: #2ec4ff;
   stroke-width: 0.5rem;
-  stroke-dasharray: 1255;
-  stroke-dashoffset: 0;
-  -webkit-transform: rotate(-90 100 100);
-          transform: rotate(-90 100 100);
 }
 
 .ui-container {
