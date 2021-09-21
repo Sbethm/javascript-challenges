@@ -90,13 +90,9 @@ button {
 }
 
 .reset--btn {
-    padding: 1em 1.25em;
+    padding: 1em 1.5;
     background-color: $inactiveColor;
     border-radius: 50%;
-
-    &:hover {
-        background-color: $activeColor;
-    }
 }
 
 i {

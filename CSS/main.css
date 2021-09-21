@@ -109,6 +109,21 @@ circle {
           justify-content: space-evenly;
 }
 
+button {
+  background-color: #252424;
+  border: none;
+}
+
+.reset--btn {
+  padding: 1em 1.25em;
+  background-color: #8c9ba1;
+  border-radius: 50%;
+}
+
+.reset--btn:hover {
+  background-color: #2ec4ff;
+}
+
 i {
   font-size: Max(2rem, 4rem);
   color: #8c9ba1;

@@ -94,8 +94,8 @@ button {
     background-color: $inactiveColor;
     border-radius: 50%;
 
-    &:hover {
-        background-color: $activeColor;
+    &::hover {
+        
     }
 }
 

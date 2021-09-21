@@ -3,22 +3,16 @@ const pauseBtn = document.querySelector('.fa-pause-circle ');
 const input = document.querySelector('input'); 
 const ticker = document.querySelector('circle');
 
-//
-
-
-// Setting the perimeter
 const perimeter = ticker.getAttribute('r') * 2 * Math.PI;
 
 ticker.setAttribute('stroke-dasharray', perimeter);
 
 let duration;
-const inputVal = Number(input.value);
 
 // NEW TIMER OBJECT
 const timer1 = new Timer(input, playBtn, pauseBtn, {
     onStart(totalDuration) {
         duration = totalDuration;
-
         playBtn.classList.remove('active');
         pauseBtn.classList.add('active');
     },
@@ -27,8 +21,7 @@ const timer1 = new Timer(input, playBtn, pauseBtn, {
         ticker.setAttribute("stroke-dashoffset", (perimeter * timeRemaining) / duration - perimeter);
     },
     onComplete() {
-        document.createElement(div);
-
+        document.createElement(dispatchEvent)
     }
 });
 

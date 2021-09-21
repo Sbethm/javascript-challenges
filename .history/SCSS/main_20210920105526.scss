@@ -89,15 +89,7 @@ button {
     border: none;
 }
 
-.reset--btn {
-    padding: 1em 1.25em;
-    background-color: $inactiveColor;
-    border-radius: 50%;
-
-    &:hover {
-        background-color: $activeColor;
-    }
-}
+>reset--btn
 
 i {
     font-size: Max(2rem, 4rem);

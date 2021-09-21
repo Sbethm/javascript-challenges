@@ -12,7 +12,7 @@ const perimeter = ticker.getAttribute('r') * 2 * Math.PI;
 ticker.setAttribute('stroke-dasharray', perimeter);
 
 let duration;
-const inputVal = Number(input.value);
+console
 
 // NEW TIMER OBJECT
 const timer1 = new Timer(input, playBtn, pauseBtn, {
